@@ -67,6 +67,8 @@ body {
     background: #EFEFEF;
 
     z-index: 1000;
+
+    box-shadow: var(--box-shadow);
 }
 
 .logo {
@@ -341,6 +343,8 @@ section.receive .content p {
 }
 
 
+
+
 @media (max-width: 1085px) {
     .home .content h1 {
         font-size: 3.7rem;
@@ -395,7 +399,9 @@ section.receive .content p {
         margin: 0 auto;
     }
 
-
+    section.receive .image{
+        display: none;
+    }
 
 }
 
@@ -417,6 +423,8 @@ section.receive .content p {
 
         transition: 0.4s;
         top: -100%;
+
+        background-color: #EFEFEF;
     }
 
     .header .navbar a:last-child {
@@ -425,6 +433,7 @@ section.receive .content p {
 
     .header .hamburguer {
         display: block;
+        z-index: 1100000;
     }
 
     .navbar.show {
@@ -481,4 +490,15 @@ section.receive .content p {
         margin: 0 auto;
     }
 
+    section.receive {
+        width: 120vw;
+    }
+}
+
+@media (max-width: 315px) {
+    section.services,
+    section.about,
+    section.contact {
+        width: 150vw;
+    }
 }
