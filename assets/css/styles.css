@@ -392,6 +392,7 @@ section.receive .content p {
     .home {
         flex-direction: column;
         height: auto;
+        padding-top: 14rem;
     }
 
     .home .image {
